@@ -18,10 +18,10 @@ public class ballSpawn : MonoBehaviour
     {
         Vector3 randomPosDelta;
 
-        if (Input.GetMouseButton(0) || Input.touchCount > 0) {
-            randomPosDelta = new Vector3(Random.Range(-0.5f, 0.5f), Random.Range(-0.5f, 0.5f), Random.Range(-0.5f, 0.5f));
+        //if (Input.GetMouseButton(0) || Input.touchCount > 0) {
+            randomPosDelta = new Vector3(Random.Range(-0.5f, 0.5f), 0, Random.Range(-0.5f, 0.5f));
 
             Instantiate(ballPrefab, startPos.position + randomPosDelta, startPos.rotation);
-        }
+        //}
     }
 }
